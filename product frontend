@@ -1,0 +1,31 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Urun.aspx.cs" Inherits="projem.Urun" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <div class="signin">
+           <div class="row">
+    <label id="lblurunadi">Ürün  adı</label>
+    <input type="text" id="txturunadi" runat="server" required="required"/>
+   </div>
+         <div class="row" >
+     <label id="lbladeti"> Adeti</label>
+    <input type="text" id="txtadet" runat="server" required="required" />
+</div>
+           <div class="row" >
+     <label id="lblfiyati"> Fiyati</label>
+    <input type="text" id="txtfiyat" runat="server" required="required" />
+</div>
+        <div class="row" >
+         <input type="button" class="button" id="btnekle" value="Ekle" runat="server" onserverclick="btnekle_ServerClick"  required="required" />
+</div>
+        </div>
+    </form>
+</body>
+</html>
+<link href="style/Style.css" rel="stylesheet" />
